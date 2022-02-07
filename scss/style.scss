@@ -123,3 +123,21 @@ header {
         }
     }
 }
+
+.about {
+    background-image: linear-gradient(rgba($tertiary, 0.7), rgba($secondary, 0.7)), url(../img/onama.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    height: 70vh;
+    @include flexCenter;
+    text-align: center;
+    color: $white;
+    h2 {
+        font-size: 3rem;
+        text-shadow: $textShadow;
+        margin-bottom: 10px;
+    }
+    p {
+        text-shadow: $textShadow;
+    }
+}
