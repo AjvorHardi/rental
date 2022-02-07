@@ -200,3 +200,30 @@ header {
         background-size: cover;
     }
 }
+
+footer {
+    background-image: linear-gradient(rgba($accents,0.85), rgba($accents,0.85)), url(../img/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+    text-align: center;
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    input {
+        padding: 14px;
+    }
+    input[type="submit"] {
+        @include btn;
+        padding: 15px;
+        background: $primary;
+        color: white;
+        &:hover {
+            background: $secondary;
+        }
+    }
+}
