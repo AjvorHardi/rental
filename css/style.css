@@ -33,8 +33,9 @@ ul {
 }
 .topBar .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  justify-content: space-between;
 }
 .topBar .container .logo {
   font-size: 2rem;
@@ -67,6 +68,45 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #27ae60;
+}
+
+header {
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .box {
+  background: rgba(39, 174, 96, 0.7);
+  padding: 40px;
+  border: 1px solid #e9ecef;
+  color: #fff;
+}
+header .box h1 {
+  font-size: 2.3rem;
+  text-shadow: 0 0 2px #2c3e50;
+}
+header .box h4 {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+header .box button {
+  padding: 12px 18px;
+  margin-top: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #f1c40f;
+  border: none;
+}
+header .box button:hover {
+  background: #2c3e50;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
