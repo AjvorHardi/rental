@@ -151,4 +151,39 @@ header .box button:hover {
   background-color: #27ae60;
 }
 
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+}
+.benefits article {
+  flex: 0 0 50%;
+  height: 50vh;
+}
+.benefits article h3 {
+  margin: 15px;
+  font-size: 1.8rem;
+  color: #727070;
+}
+.benefits article:nth-child(1),
+.benefits article:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  text-align: justify;
+  background-color: #e9ecef;
+  color: #7d7c7c;
+}
+.benefits article:nth-child(2) {
+  background-image: url(../img/benefiti1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.benefits article:nth-child(3) {
+  background-image: url(../img/benefiti2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 /*# sourceMappingURL=style.css.map */

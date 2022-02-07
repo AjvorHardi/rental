@@ -167,3 +167,36 @@ header {
         }
     }
 }
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    article {
+        flex: 0 0 50%;
+        height: 50vh;
+        h3 {
+            margin: 15px;
+            font-size: 1.8rem;
+            color: #727070
+        }
+    }
+    article:nth-child(1),
+    article:nth-child(4) {
+        @include flexCenter;
+        flex-direction: column;
+        padding: 50px;
+        text-align: justify;
+        background-color: $gray;
+        color: #7d7c7c
+    }
+    article:nth-child(2) {
+        background-image: url(../img/benefiti1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    article:nth-child(3) {
+        background-image: url(../img/benefiti2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
