@@ -52,6 +52,9 @@ ul {
 .container {
     width: 80%;
     margin: auto;
+    @media(max-width: 768px) {
+        width: 95%;
+    }
 }
 
 .topBar {
@@ -59,6 +62,9 @@ ul {
     padding: 5px 0;
     .container {
         @include flexCenter;
+        @media(max-width: 768px) {
+            flex-direction: column;
+        }
         justify-content: space-between;
         .logo {
             font-size: 2rem;
@@ -74,6 +80,9 @@ ul {
                 color: $white;
                 font-size: 1.5rem;
                 margin-left: 20px;
+                @media(max-width: 768px) {
+                    margin: 10px;
+                }
                 &:hover {
                     color: $accents;
                 }
@@ -87,9 +96,15 @@ nav {
         justify-content: center;
         li {
             margin: 10px;
+            @media(max-width: 768px) {
+                margin: 5px;
+            }
             a {
                 color: $tertiary;
                 font-size: 1.2rem;
+                @media(max-width: 768px) {
+                    font-size: 1rem;
+                }
                 &:hover {
                     color: $secondary;
                 }
@@ -109,14 +124,25 @@ header {
         background: rgba($secondary, 0.7);
         padding: 40px;
         border: 1px solid $gray;
+        @media(max-width: 768px) {
+            padding: 20px;
+            margin: 20px;
+            max-width: 220px;
+        }
         color: $white;
         h1 {
             font-size: 2.3rem;
+            @media(max-width: 768px) {
+                font-size: 1.2rem;
+            }
             text-shadow: $textShadow;
         }
         h4 {
             font-weight: 300;
             font-size: 1.2rem;
+            @media(max-width: 768px) {
+                font-size: 0.8rem;
+            }
         }
         button {
             @include btn;
@@ -144,8 +170,12 @@ header {
 
 .recommendations {
     display: flex;
+    flex-wrap: wrap;
     article {
         flex: 1;
+        @media(max-width: 768px) {
+            flex: 0 0 50%;
+        }
         img {
             width: 100%;
             display: block;
@@ -174,11 +204,19 @@ header {
     article {
         flex: 0 0 50%;
         height: 50vh;
+        @media(max-width: 768px) {
+            flex: 0 0 100%;
+        }
         h3 {
             margin: 15px;
             font-size: 1.8rem;
-            color: #727070
+            color: #727070;
+            @media(max-width: 768px) {
+                font-size: 1.3rem;
+                margin: 10px;
+            }
         }
+        
     }
     article:nth-child(1),
     article:nth-child(4) {
@@ -187,12 +225,20 @@ header {
         padding: 50px;
         text-align: justify;
         background-color: $gray;
-        color: #7d7c7c
+        color: #7d7c7c;
+        @media(max-width: 768px) {
+            padding: 40px;
+            font-size: 0.9rem;
+            height: auto;
+        }
     }
     article:nth-child(2) {
         background-image: url(../img/benefiti1.jpg);
         background-position: center;
         background-size: cover;
+        @media(max-width: 768px) {
+            order: -1;
+        }
     }
     article:nth-child(3) {
         background-image: url(../img/benefiti2.jpg);
@@ -206,6 +252,9 @@ footer {
     background-position: center;
     background-size: cover;
     padding: 200px 0;
+    @media(max-width: 768px) {
+        padding: 100px 40px;
+    }
     text-align: center;
     h3 {
         font-size: 2rem;
@@ -216,6 +265,10 @@ footer {
     }
     input {
         padding: 14px;
+        @media(max-width: 768px) {
+            width: 100%;
+            margin-bottom: 10px;
+        }
     }
     input[type="submit"] {
         @include btn;

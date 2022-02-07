@@ -26,6 +26,11 @@ ul {
   width: 80%;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
 
 .topBar {
   background: #2c3e50;
@@ -36,6 +41,11 @@ ul {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .topBar .container {
+    flex-direction: column;
+  }
 }
 .topBar .container .logo {
   font-size: 2rem;
@@ -51,6 +61,11 @@ ul {
   font-size: 1.5rem;
   margin-left: 20px;
 }
+@media (max-width: 768px) {
+  .topBar .container .icons a {
+    margin: 10px;
+  }
+}
 .topBar .container .icons a:hover {
   color: #f1c40f;
 }
@@ -62,9 +77,19 @@ nav ul {
 nav ul li {
   margin: 10px;
 }
+@media (max-width: 768px) {
+  nav ul li {
+    margin: 5px;
+  }
+}
 nav ul li a {
   color: #4a9375;
   font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  nav ul li a {
+    font-size: 1rem;
+  }
 }
 nav ul li a:hover {
   color: #27ae60;
@@ -86,13 +111,30 @@ header .box {
   border: 1px solid #e9ecef;
   color: #fff;
 }
+@media (max-width: 768px) {
+  header .box {
+    padding: 20px;
+    margin: 20px;
+    max-width: 220px;
+  }
+}
 header .box h1 {
   font-size: 2.3rem;
   text-shadow: 0 0 2px #2c3e50;
 }
+@media (max-width: 768px) {
+  header .box h1 {
+    font-size: 1.2rem;
+  }
+}
 header .box h4 {
   font-weight: 300;
   font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  header .box h4 {
+    font-size: 0.8rem;
+  }
 }
 header .box button {
   padding: 12px 18px;
@@ -131,9 +173,15 @@ header .box button:hover {
 
 .recommendations {
   display: flex;
+  flex-wrap: wrap;
 }
 .recommendations article {
   flex: 1;
+}
+@media (max-width: 768px) {
+  .recommendations article {
+    flex: 0 0 50%;
+  }
 }
 .recommendations article img {
   width: 100%;
@@ -159,10 +207,21 @@ header .box button:hover {
   flex: 0 0 50%;
   height: 50vh;
 }
+@media (max-width: 768px) {
+  .benefits article {
+    flex: 0 0 100%;
+  }
+}
 .benefits article h3 {
   margin: 15px;
   font-size: 1.8rem;
   color: #727070;
+}
+@media (max-width: 768px) {
+  .benefits article h3 {
+    font-size: 1.3rem;
+    margin: 10px;
+  }
 }
 .benefits article:nth-child(1),
 .benefits article:nth-child(4) {
@@ -175,10 +234,23 @@ header .box button:hover {
   background-color: #e9ecef;
   color: #7d7c7c;
 }
+@media (max-width: 768px) {
+  .benefits article:nth-child(1),
+.benefits article:nth-child(4) {
+    padding: 40px;
+    font-size: 0.9rem;
+    height: auto;
+  }
+}
 .benefits article:nth-child(2) {
   background-image: url(../img/benefiti1.jpg);
   background-position: center;
   background-size: cover;
+}
+@media (max-width: 768px) {
+  .benefits article:nth-child(2) {
+    order: -1;
+  }
 }
 .benefits article:nth-child(3) {
   background-image: url(../img/benefiti2.jpg);
@@ -193,6 +265,11 @@ footer {
   padding: 200px 0;
   text-align: center;
 }
+@media (max-width: 768px) {
+  footer {
+    padding: 100px 40px;
+  }
+}
 footer h3 {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -202,6 +279,12 @@ footer p {
 }
 footer input {
   padding: 14px;
+}
+@media (max-width: 768px) {
+  footer input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 footer input[type=submit] {
   padding: 12px 18px;
