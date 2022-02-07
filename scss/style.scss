@@ -66,3 +66,19 @@ ul {
         }
     }
 } 
+nav {
+    ul {
+        display: flex;
+        justify-content: center;
+        li {
+            margin: 10px;
+            a {
+                color: $tertiary;
+                font-size: 1.2rem;
+                &:hover {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
