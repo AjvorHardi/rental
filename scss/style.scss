@@ -9,6 +9,11 @@ $gray: #e9ecef;
 $white: #fff;
 $transition: .3s ease;
 $textShadow: 0 0 2px $primary;
+@mixin flexCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 * {
     margin: 0;
@@ -29,3 +34,35 @@ a {
 ul {
     list-style: none;
 }
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.topBar {
+    background: $primary;
+    padding: 5px 0;
+    .container {
+        @include flexCenter;
+        .logo {
+            font-size: 2rem;
+            color: $accents;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            &:hover {
+                color: $white;
+            }
+        }
+        .icons {
+            a {
+                color: $white;
+                font-size: 1.5rem;
+                margin-left: 20px;
+                &:hover {
+                    color: $accents;
+                }
+            }
+        }
+    }
+} 

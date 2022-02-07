@@ -22,4 +22,36 @@ ul {
   list-style: none;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.topBar {
+  background: #2c3e50;
+  padding: 5px 0;
+}
+.topBar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topBar .container .logo {
+  font-size: 2rem;
+  color: #f1c40f;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.topBar .container .logo:hover {
+  color: #fff;
+}
+.topBar .container .icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+.topBar .container .icons a:hover {
+  color: #f1c40f;
+}
+
 /*# sourceMappingURL=style.css.map */
