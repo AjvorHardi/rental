@@ -141,3 +141,29 @@ header {
         text-shadow: $textShadow;
     }
 }
+
+.recommendations {
+    display: flex;
+    article {
+        flex: 1;
+        img {
+            width: 100%;
+            display: block;
+        }
+        div {
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+    }
+    article:nth-child(odd) {
+        div {
+            background-color: $primary;
+        }
+    }
+    article:nth-child(even) {
+        div {
+            background-color: $secondary;
+        }
+    }
+}
